@@ -1,0 +1,206 @@
+/* RESETANDO ALGUNS ESTILOS PRÉ-DEFINIDOS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/* ESTILIZAÇÃO DO BODY */
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* ESTILIZAÇÃO DA DIV MASTER */
+.insta-wrapper {
+    display: flex;
+    align-items: center; /* PAR ALINHAR TODOS ITENS NO CENTRO E NA VERTICAL */
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+/* ESTILIZAÇÃO DA DIV DA IMAGEM DO CELULAR */
+.insta-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15%;
+    width: 50%;
+}
+
+/* ESTILIZAÇÃO DA DIV DA IMAGEM DO CELULAR - TAG IMG */
+.insta-phone img {
+    height: 45rem;
+}
+
+/* ESTILIZAÇÃO DA DIV DAS INFORMAÇÕES DE ACESSO AO INSTAGRAM */
+.insta-logon {
+    display: flex;
+    align-items: center; /* HORIZONTAL */
+    justify-content: space-around; /* VERTICAL */
+    flex-direction: column; /* INVERTE OS EIXOS DOS DOIS ESTILOS ANTERIORES */
+    width: 50%;
+    min-height: 34rem; 
+    font-size: 14px;   
+}
+
+/* ESTILIZAÇÃO GROUP, DIV CONTAINER DO LOGON/LOGOUT (REMOVER CONTA) */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 80%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+/* nth-child(1) -> PEGA O CONTAINER DO LOGON/LOGOUT (REMOVER CONTA) */
+.container:nth-child(1) {
+    min-height: 19rem;
+}
+
+/* ESTILIZAÇÃO DO LOGO DO INSTAGRAM */
+.insta-logo {
+    height: 3rem;    
+}
+
+/* ESTILIZAÇÃO DA FOTO DE PERFIL DO USUÁRIO */
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; /* NÃO PERMITE QUE A FOTO FIQUE FOR DA DIV EM QUE ELA SE ENCONTRA */
+}
+
+.profile-photo img {
+    height: 6rem;    
+}
+
+/* ESTILIZAÇÃO DO BOTÃO PARA CONTINUAR O LOGIN COM O PERFIL ATUAL */
+.insta-login {
+    background-color: #0095f6; /* COR DO BOTÃO */
+    color: #ffffff; /* COR DO TEXTO DO BOTÃOo */
+    padding: 8px; /* ALTURA E LARGURA DO BOTÃO */
+    border-radius: 4px; /* ARRENDONDAMENTO DOS CANTOS DO BOTÃO */
+}
+
+/* ESTILIZAÇÃO DO BOTÃO DE REMOVER CONTA */
+.insta-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* ESTILIZAÇÃO DA DIV CONTAINER DA SEGUNDA CAIXA ABAIXO DO LOGIN */
+.account {
+    color: rgb(160, 160, 160);
+}
+
+.link {
+    color: #0095f6;
+    font-weight: bold;
+}
+
+/* ESTILIZAÇÃO DA DIV CONTAINER PARA BAIXAR O APLICATIVO DO INSTAGRAM */
+.get {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+/* ESTILIZAÇÃO DA DIV DOWNLOAD PARA AS PLATAFORMAS IOS E ANDROID */
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('apple-button.png');
+}
+
+.app-download:nth-child(2) {
+    background-image: url('googleplay-button.png');
+}
+
+/* RESPONSIVIDADE PARA TABLETS */
+@media(max-width: 1024px) {
+    .insta-wrapper {
+        width: 90%;
+    }
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+@media(max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .insta-wrapper {
+        width: 90%;        
+    }
+
+    .insta-phone {
+        display: none;
+    }
+
+    .insta-logon {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+}
+
+/* ESTILIZAÇÃO DO RODAPÉ DE FORMAL GERAL */
+footer {
+    text-align: center;
+    position:absolute;
+    color: rgba(128, 128, 128, 0.808);
+    font-size: 12px;
+    bottom: 0;
+    width:100%;
+    text-decoration-color: (128, 128, 128, 0.808);  
+}
+
+/* ESTILIZAÇÃO DOS LINKS */
+footer a {
+    color: rgba(128, 128, 128, 0.808);
+}
+
+/* ESTILIZAÇÃO DA CLASSE RODAPÉ */
+.rodape{
+    margin-bottom: 15px ;
+    word-spacing: 10px;
+}
+
+/* ESTILIZAÇÃO DA CLASSE DE DIREITOS AUTORAIS */
+.direitos {
+    margin-bottom: 2px;
+}
+
+
+
